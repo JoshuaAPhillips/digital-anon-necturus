@@ -3,7 +3,7 @@ import json
 import natsort
 
 # Path to the top-level directory containing the folders
-top_directory = './files'
+top_directory = os.path.join(os.path.dirname(__file__), 'files')
 
 # Function to process each subfolder
 def process_folders(directory):
